@@ -11,9 +11,8 @@
     <div class="col-lg-4 col-md-6 col-10 mx-auto p-4 rounded-5 text-white" style="background-color: #074A48; height: 80vh;">
         <div class="bg-white p-2 text-dark rounded-4" style="height: 30vh;">
             <div class="d-flex justify-content-between">
-                <!-- <p class="fw-bold mt-2" style="color: #0d8f8a;">Calculator</p> -->
                 <h1 class="fw-bold mt-1 fs-5" style="color: #0d8f8a;">QuickCal <sub class="fs-6">pro</sub></h1>
-                <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
+                <button class="btn" onclick="mode()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
                     <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8m.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707"/>
                 </svg></button>
             </div> <br> <br>
@@ -25,8 +24,8 @@
         <table class="bg-white mt-2" style="height: 44vh; width: 100%;">
             <tr class="text-dark">
                 <th class="px-3 py-2 border border-dark text-center fs-3" onclick="clearDisplay()">c</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5">+/-</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5">%</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="sign()">+/-</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="per()">%</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" style="background-color: #0d8f8a;" onclick="plus()">+</th>
             </tr>
 
@@ -52,8 +51,8 @@
             </tr>
 
             <tr class="text-dark">
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="de()">del</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" onclick="zero()">0</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="twoz()">00</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" onclick="dot()">.</th>
                 <th class="px-3 py-2 border border-dark text-center fs-4" style="background-color: #0d8f8a;" onclick="enter()">=</th>
             </tr>

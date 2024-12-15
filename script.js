@@ -31,8 +31,8 @@ function nine(){
 function zero(){
     display.innerHTML += `0`
 }
-function twoz(){
-    display.innerHTML += `00`
+function per(){
+    display.innerHTML += `%`
 }
 function dot(){
     display.innerHTML += `.`
@@ -49,9 +49,15 @@ function divide(){
 function plus(){
     display.innerHTML += `+`
 }
+function sign(){
+    display.innerHTML += `+/-`
+}
 function enter(){
-    alert('fhgjh')
+    alert('lol')
 }
 function clearDisplay(){
     display.innerHTML = ''
+}
+function mode(){
+    alert('light mode')
 }
