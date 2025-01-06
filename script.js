@@ -37,6 +37,7 @@ function sign(){
 }
 function clearDisplay(){
     screen = '';
+    ans.innerHTML = ''
     updateDisplay();
 }
 function darkMode(){
@@ -64,10 +65,15 @@ function enter(){
     if (screen == ''){
         display.innerHTML = `<p class = "text-center" style="color: grey;">Invalid Input!</p>`
     }
-    // else{
-    //     for(i=1;1<=10;i++){
-    //         console.log(i);
-            
-    //     }
-    // }
+    else {
+        let expression = display.innerHTML;
+        expression = expression.replace(/x/g, "*").replace(/÷/g, "/");
+        try {
+            let result = eval(expression);
+            ans.innerHTML = result;
+        } catch (e) {
+            display.innerHTML = "Error";
+        }
+    }
+
 }
