@@ -35,14 +35,6 @@ function sign(){
     screen += '+/-';
     updateDisplay();
 }
-function enter(){
-    if (screen == ''){
-        display.innerHTML = `<p class = "text-center" style="color: grey;">Invalid Input!</p>`
-    }
-    else{
-        
-    }
-}
 function clearDisplay(){
     screen = '';
     updateDisplay();
@@ -50,10 +42,14 @@ function clearDisplay(){
 function darkMode(){
     main.style.backgroundColor = "black";
     main.style.color = "white"
+    tab.style.backgroundColor = "black"
+    tab.style.color = "white"
 }
 function lightMode(){
     main.style.backgroundColor = "white";
     main.style.color = "black"
+    tab.style.backgroundColor = "white"
+    tab.style.color = "black"
 }
 function addToDisplay(value){
     screen += value
@@ -63,4 +59,15 @@ function addToDisplay(value){
 function del(){
     screen = screen.slice(0, -1)
     updateDisplay()
+}
+function enter(){
+    if (screen == ''){
+        display.innerHTML = `<p class = "text-center" style="color: grey;">Invalid Input!</p>`
+    }
+    // else{
+    //     for(i=1;1<=10;i++){
+    //         console.log(i);
+            
+    //     }
+    // }
 }
