@@ -36,14 +36,19 @@ function sign(){
     updateDisplay();
 }
 function enter(){
-    alert('lol')
+    ans.innerHTML = 77
 }
 function clearDisplay(){
-    screen += '';
+    screen = '';
     updateDisplay();
 }
-function mode(){
-    alert('light mode')
+function darkMode(){
+    main.style.backgroundColor = "black";
+    main.style.color = "white"
+}
+function lightMode(){
+    main.style.backgroundColor = "white";
+    main.style.color = "black"
 }
 function addToDisplay(value){
     screen += value

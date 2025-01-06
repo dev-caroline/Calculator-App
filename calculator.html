@@ -9,14 +9,17 @@
 </head>
 <body class="mt-5 pt-lg-5 pt-2 pb-5">
     <div class="col-lg-4 col-md-6 col-10 mx-auto p-4 rounded-5 text-white" style="background-color: #074A48; height: 80vh;">
-        <div class="bg-white p-2 text-dark rounded-4" style="height: 30vh;">
+        <div class="p-2 rounded-4" id="main" style="height: 30vh; background-color: white;color: black;">
             <div class="d-flex justify-content-between">
                 <h1 class="fw-bold mt-1 fs-5" style="color: #0d8f8a;">QuickCal <sub class="fs-6">pro</sub></h1>
-                <button class="btn" onclick="mode()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
+                <button class="btn" onclick="darkMode()" ondblclick="lightMode()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
                     <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8m.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707"/>
                 </svg></button>
             </div> <br> <br>
-            <div class="mt-5 pb-2 fs-3 fw-bold text-wrap text-break" id="display"></div>  
+            <div id="back">
+                <p class="mt-5 pb-2 fs-3 fw-bold text-wrap text-break" id="display"></p>
+                <p class="fw-bold text-end fs-3" id="ans"></p>
+            </div>  
         </div>
         <table class="bg-white mt-2" style="height: 44vh; width: 100%;">
             <tr class="text-dark">
