@@ -72,7 +72,7 @@ function enter(){
             let result = eval(expression);
             ans.innerHTML = result;
         } catch (e) {
-            display.innerHTML = "Error";
+        display.innerHTML = `<p class = "text-center" style="color: grey;">Syntax Error</p>`
         }
     }
 
