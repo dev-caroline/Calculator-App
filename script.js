@@ -36,7 +36,12 @@ function sign(){
     updateDisplay();
 }
 function enter(){
-    ans.innerHTML = 77
+    if (screen == ''){
+        display.innerHTML = `<p class = "text-center" style="color: grey;">Invalid Input!</p>`
+    }
+    else{
+        
+    }
 }
 function clearDisplay(){
     screen = '';
