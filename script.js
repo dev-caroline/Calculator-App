@@ -1,63 +1,56 @@
+let display = document.getElementById('display') 
+
+let screen = ""
+function updateDisplay(){
+    display.innerHTML = screen;
+}
 function btn(){
     window.location.href = "calculator.html"
 }
-function one(){
-    display.innerHTML += `1`
-}
-function two(){
-    display.innerHTML += `2`
-}
-function three(){
-    display.innerHTML += `3`
-}
-function four(){
-    display.innerHTML += `4`
-}
-function five(){
-    display.innerHTML += `5`
-}
-function six(){
-    display.innerHTML += `6`
-}
-function seven(){
-    display.innerHTML += `7`
-}
-function eight(){
-    display.innerHTML += `8`
-}
-function nine(){
-    display.innerHTML += `9`
-}
-function zero(){
-    display.innerHTML += `0`
-}
 function per(){
-    display.innerHTML += `%`
+    screen += '%';
+    updateDisplay();
 }
 function dot(){
-    display.innerHTML += `.`
+    screen += '.';
+    updateDisplay();
 }
 function minus(){
-    display.innerHTML += `-`
+    screen += '-';
+    updateDisplay();
 }
 function times(){
-    display.innerHTML += `x`
+    screen += 'x';
+    updateDisplay();
 }
 function divide(){
-    display.innerHTML += `/`
+    screen += '/';
+    updateDisplay();
 }
 function plus(){
-    display.innerHTML += `+`
+    screen += '+';
+    updateDisplay();
 }
 function sign(){
-    display.innerHTML += `+/-`
+    screen += '+/-';
+    updateDisplay();
 }
 function enter(){
     alert('lol')
 }
 function clearDisplay(){
-    display.innerHTML = ''
+    screen += '';
+    updateDisplay();
 }
 function mode(){
     alert('light mode')
+}
+function addToDisplay(value){
+    screen += value
+    updateDisplay()
+}
+//learn slice
+function del(){
+    screen = screen.slice(0, -1)
+    updateDisplay()
 }

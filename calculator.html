@@ -16,10 +16,7 @@
                     <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8m.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707"/>
                 </svg></button>
             </div> <br> <br>
-            <div class="mt-5 pb-2 fs-3 fw-bold text-wrap text-break" id="display">
-                <!-- <input type="text" class="col-12 p-3"><br> 
-                <input type="text" class="col-12 p-3"> -->
-            </div>  
+            <div class="mt-5 pb-2 fs-3 fw-bold text-wrap text-break" id="display"></div>  
         </div>
         <table class="bg-white mt-2" style="height: 44vh; width: 100%;">
             <tr class="text-dark">
@@ -30,29 +27,29 @@
             </tr>
 
             <tr class="text-dark">
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="one()">1</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="two()">2</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="three()">3</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('1')">1</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('2')">2</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('3')">3</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" style="background-color: #0d8f8a;" onclick="minus()">-</th>
             </tr>
 
             <tr class="text-dark">
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="four()">4</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="five()">5</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="six()">6</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('4')">4</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('5')">5</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('6')">6</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" style="background-color: #0d8f8a;" onclick="times()">x</th>
             </tr>
 
             <tr class="text-dark">
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="seven()">7</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="eight()">8</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="nine()">9</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('7')">7</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('8')">8</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('9')">9</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" style="background-color: #0d8f8a;" onclick="divide()">/</th>
             </tr>
 
             <tr class="text-dark">
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="de()">del</th>
-                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="zero()">0</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="del()">del</th>
+                <th class="px-3 py-2 border border-dark text-center fs-5" onclick="addToDisplay('0')">0</th>
                 <th class="px-3 py-2 border border-dark text-center fs-5" onclick="dot()">.</th>
                 <th class="px-3 py-2 border border-dark text-center fs-4" style="background-color: #0d8f8a;" onclick="enter()">=</th>
             </tr>
